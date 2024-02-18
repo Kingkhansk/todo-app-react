@@ -1,6 +1,6 @@
 {
-  "homepage": "https://kingkhansk.github.io/todo-app-react",
-  "name": "todo-app",
+  "homepage": "https://kingkhansk.github.io/todo-app-react/",
+  "name": "todo-app-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
