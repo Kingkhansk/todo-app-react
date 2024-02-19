@@ -67,19 +67,19 @@ function App() {
   return (
     <>
       <NavBar />
-      <section className='container mx-auto text-center'>
+      <section className='container mx-auto text-center mt-2'>
         <h1 className='text-lg font-bold'>Add A Todo</h1>
         <form onSubmit={handleAdd}>
-          <div className='flex'>
-            <input type="text" onChange={handleChange} value={todo} className='mx-2 my-1 w-full border border-gray-300 rounded-sm' required />
+          <div className='sm:flex max-sm:mx-2'>
+            <input type="text" onChange={handleChange} value={todo} className='sm:mx-2 px-1 my-1 w-full border border-gray-300 rounded-sm' required />
             <button className='bg-purple-700 px-2 py-1 text-white rounded hover:bg-purple-950'>
               Add
             </button>
           </div>
         </form>
         <div className="flex justify-between border border-b-purple-400">
-          <span className='font-semibold'>All Todos</span>
-          <select className='text-right pr-1' onChange={handleSelect} value={selectedValue}>
+          <span className='font-semibold max-sm:ps-2'>All Todos</span>
+          <select className='text-right pr-1 max-sm:mr-1' onChange={handleSelect} value={selectedValue}>
             <option value="all">Show All</option>
             <option value="completed">Show Completed</option>
             <option value="incomplete">Show Incomplete</option>
